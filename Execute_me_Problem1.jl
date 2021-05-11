@@ -29,7 +29,7 @@ sol = solve(prob)                       #Solve the system
 
 #--------------- PLOT REMPORAL RESULTS ------------------------------------------
 #Plot the results; D₁ & D₂ vs time
-plt1 = plot(sol, xaxis="time", yaxis = "D₁, D₂", label=["D₁" "D₂"])
+plt1 = Plots.plot(sol, xaxis="time", yaxis = "D₁, D₂", label=["D₁" "D₂"])
 display(plt1)
 
 #--------  Notch-Delta Two Cell Dynamics -------------
